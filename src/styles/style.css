@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
    
   body {
@@ -52,6 +53,10 @@
     font-size: 22px;
     user-select: none;
   }
+
+  .app-bar__brand img{
+    width: 7rem;
+  }
    
   .app-bar .app-bar__navigation {
     position: absolute;
@@ -82,7 +87,7 @@
   */
    
   main {
-    padding: 32px;
+    /* padding: 32px; */
     flex: 1;
   }
    
