@@ -1,0 +1,136 @@
+.layanan{
+    /* background-image: url(../public/bg-hero.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10rem; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.layanan__container{
+    
+    padding: 2rem 3rem;
+    margin-top: 3rem;
+    background-color: white;
+    width: 70%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+}
+
+
+.form-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .form-grid {
+    background-color: white;
+    color: white;
+    display: grid;
+    grid-template-areas:
+      "nik nama"
+      "alamat rt-rw"
+      "email hp"
+      "jenis jenis"
+      "lorem1 lorem2"
+      "lorem3 lorem4"
+      "button button";
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  /* Form Input dan Dropdown */
+  .form-grid input,
+  .form-grid select,
+  .form-grid button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .form-grid button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-grid button:hover {
+    background-color: #45a049;
+  }
+
+  /* Area Grid */
+  .nik { grid-area: nik; }
+  .nama { grid-area: nama; }
+  .alamat { grid-area: alamat; }
+  .rt-rw { grid-area: rt-rw; display: flex; gap: 10px; }
+  .rt-rw select { flex: 1; }
+  .email { grid-area: email; }
+  .hp { grid-area: hp; }
+  .jenis { grid-area: jenis; }
+  .lorem1 { grid-area: lorem1; }
+  .lorem2 { grid-area: lorem2; }
+  .lorem3 { grid-area: lorem3; }
+  .lorem4 { grid-area: lorem4; }
+  .button { grid-area: button; text-align: center; }
+
+
+  @media (max-width: 768px) {
+    .layanan__container {
+      width: 90%; /* Kurangi lebar container */
+      padding: 1.5rem; /* Sesuaikan padding */
+    }
+  
+    .form-grid {
+      grid-template-areas:
+        "nik"
+        "nama"
+        "alamat"
+        "rt-rw"
+        "email"
+        "hp"
+        "jenis"
+        "lorem1"
+        "lorem2"
+        "lorem3"
+        "lorem4"
+        "button"; /* Setiap elemen menjadi baris terpisah */
+      grid-template-columns: 1fr; /* Semua kolom menjadi 1 */
+    }
+  
+    .rt-rw {
+      flex-direction: column; /* RT dan RW ditampilkan vertikal */
+    }
+  }
+  
+  /* Media Query untuk Perangkat Lebar < 576px (Ponsel Kecil) */
+  @media (max-width: 576px) {
+    .layanan__container {
+      width: 100%; /* Full width untuk layar kecil */
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  
+    .form-header {
+      font-size: 16px; /* Perkecil ukuran font header */
+    }
+  
+    .form-grid input,
+    .form-grid select,
+    .form-grid button {
+      font-size: 12px; /* Sesuaikan ukuran input */
+      padding: 8px; /* Kurangi padding input */
+    }
+  
+    .form-grid button {
+      font-size: 14px;
+    }
+  }

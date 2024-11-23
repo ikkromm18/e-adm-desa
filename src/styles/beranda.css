@@ -19,7 +19,7 @@
 
 .btn__ajukan{
     margin-top: 1rem;
-    width: 4rem;
+    width: 6rem;
     display: inline-block;
     padding: 7px 20px;
     font-size: 16px;
@@ -49,14 +49,7 @@
     
 }
 
-.manfaat .manfaat__poin{
-    margin-top: 2rem;
-    width: 80%; 
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: space-evenly;
-}
+
 
 .card{
     width: 15rem;
@@ -101,10 +94,6 @@
     font-weight: 700;
 }
 
-.foto{
-
-}
-
 .foto .foto__container img{
   height: 23rem;
   margin-top: 1rem;
@@ -117,6 +106,26 @@
         padding: 2rem;
         font-size: 1rem;
       }
+
+      .manfaat .manfaat__poin{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .isi{
+        width: 90%;
+        text-align: center;
+        /* background-color: #be0000; */
+    }
+    .sambutan__konten{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -125,10 +134,32 @@
         padding: 10rem;
         font-size: 1.5rem;
       }
+      .manfaat .manfaat__poin{
+        margin-top: 2rem;
+        width: 80%; 
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .isi{
+        width: 60%;
+        text-align: left;
+        /* background-color: #be0000; */
+    }
+
+  
        
 }
 
-@media screen and (min-width: 800px) {}
+@media screen and (min-width: 800px) {
+    .sambutan__konten{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
 
 @media screen and (min-width: 850px) {}
 

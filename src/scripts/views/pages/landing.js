@@ -7,7 +7,7 @@ const Landing = {
     <div class="hero__elemen">  
       <h2>Urus Keadministrasian</h2>
       <h2>Menjadi Lebih Mudah</h2>
-      <a href="#" class="btn__ajukan">Ajukan</a>
+      <a href="#/layanan" class="btn__ajukan">Ajukan</a>
     </div>
   </div>
 

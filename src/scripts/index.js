@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import '../styles/beranda.css';
+import '../styles/layanan.css';
 import App from './views/app';
 
 // eslint-disable-next-line no-unused-vars
